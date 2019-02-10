@@ -25,21 +25,26 @@ My systems responses to the following questions:
 How many Twitter users are in the database?
 
 1598315
+
 Which Twitter users link the most to other Twitter users? (Provide the top ten.)
 
 TBD
-Who is are the most mentioned Twitter users? (Provide the top five.)
+
+Who isare the most mentioned Twitter users? (Provide the top five.)
 
 TBD
 Who are the most active Twitter users (top ten)?
 
 TBD
+
 Who are the five most grumpy (most negative tweets) and the most happy (most positive tweets)?
 
 TBD
+
 Note: if you are using Vagrant and you cannot connect to the docker container from your computer in (robo 3t,) put this in the Vagrantfile:
 
 ##-*- mode: ruby -*-
+
 ##vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
