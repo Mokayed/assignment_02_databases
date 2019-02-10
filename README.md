@@ -1,23 +1,29 @@
 # assignment_02_databases
 assignment_02_databases with java and mongo in docker container
 
-1-Go to your vagrant or Linux, to creater a docker container by typing “docker run --rm -v $(pwd)/data:/data/db --publish=27017:27017 --name dbms -d mongo”
+1-Go to your vagrant or Linux, to creater a docker container by typing â€œdocker run --rm -v $(pwd)/data:/data/db --publish=27017:27017 --name dbms -d mongoâ€
 
-2-after creating the dbms container use this cmd to access the dbms container “docker exec -it dbms bash”.
-3-after accessing the container, update the apt with “apt-get update”,then use this cmd to download wget “apt-get install -y wget”,then download unzip using “apt-get install -y unzip”.
-4.Download the tweeter training and test data zip file by typing “wget http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip”.
-5-then unzip the trainingandtestdata file by “unzip trainingandtestdata.zip”.
-6-Now you ready to convert the data in tu uf8 by typing “iconv -f ISO-8859-1 -t utf-8 training.1600000.processed.noemoticon.csv”.
-7-Then get the header ready by doing “sed -i '1s;^;polarity,id,date,query,user,text\n;' converted-utf8.cs” cmd.
-8- Then use the mongoimport cmd “mongoimport --host=127.0.0.1 -d tweets -c data --type csv --file converted-utf8.csv --headerlineconnected to: 127.0.0.1”.
-9- Now test if the database is working as it should by, connecting to it from the GUI client RoboMongo, see https://robomongo.org/download.
+2-after creating the dbms container use this cmd to access the dbms container â€œdocker exec -it dbms bashâ€.
 
-10- You are ready now open then netbeans project which is made in java, then rune the “mainDB” class.
+3-after accessing the container, update the apt with â€œapt-get updateâ€,then use this cmd to download wget â€œapt-get install -y wgetâ€,then download unzip using â€œapt-get install -y unzipâ€.
 
+4.Download the tweeter training and test data zip file by typing â€œwget http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zipâ€.
+
+5-then unzip the trainingandtestdata file by â€œunzip trainingandtestdata.zipâ€.
+
+6-Now you ready to convert the data in tu uf8 by typing â€œiconv -f ISO-8859-1 -t utf-8 training.1600000.processed.noemoticon.csvâ€.
+
+7-Then get the header ready by doing â€œsed -i '1s;^;polarity,id,date,query,user,text\n;' converted-utf8.csâ€ cmd.
+
+8- Then use the mongoimport cmd â€œmongoimport --host=127.0.0.1 -d tweets -c data --type csv --file converted-utf8.csv --headerlineconnected to: 127.0.0.1â€.
+
+9- Now test if the database is working as it should by, connecting to it from the GUI client RoboMongo, see https://robomongo.org/download.
+
+10- You are ready now open then netbeans project which is made in java, then rune the â€œmainDBâ€ class.
 
 Note: if you are using Vagrant and you cannot connect to the docker container from your computer in (robo 3t,) put this in the Vagrantfile:
 
-‘# -*- mode: ruby -*-
+â€˜# -*- mode: ruby -*-
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
