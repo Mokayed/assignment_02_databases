@@ -23,8 +23,8 @@ public class MainDb {
     public static void main(String[] args) {
         //dbContest();
         userCount();
-        mostActive();
-        mentionsUser();
+        //mostActive();
+        //mentionsUser();
     }
 
     static MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
