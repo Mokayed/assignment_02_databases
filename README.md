@@ -23,9 +23,9 @@ assignment_02_databases with java and mongo in docker container
 
 Note: if you are using Vagrant and you cannot connect to the docker container from your computer in (robo 3t,) put this in the Vagrantfile:
 
-# -*- mode: ruby -*-
+##-*- mode: ruby -*-
 
-# vi: set ft=ruby :
+##vi: set ft=ruby :
 
 
 Vagrant.configure("2") do |config|
