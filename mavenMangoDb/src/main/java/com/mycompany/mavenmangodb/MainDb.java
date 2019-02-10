@@ -34,23 +34,23 @@ public class MainDb {
             System.out.println(document.toJson());
         }
     };
-// that methode is made only for testing...
+// this methode is made only for testing...
     public static void dbConTest() {
-        MongoDatabase database = mongoClient.getDatabase("test");
+        MongoDatabase database = mongoClient.getDatabase("tweets");
         MongoCollection<Document> coll = database.getCollection("things");
         coll.find(eq("user", "2Hood4Hollywood"))
                 .forEach(printBlock);
     }
 
     public static void userCount() {
-        MongoDatabase database = mongoClient.getDatabase("test");
+        MongoDatabase database = mongoClient.getDatabase("tweets");
         MongoCollection<Document> coll = database.getCollection("things");
         long value = coll.count();
         System.out.println(value);
     }
 
     public static void mostActive() {
-        MongoDatabase database = mongoClient.getDatabase("test");
+        MongoDatabase database = mongoClient.getDatabase("tweets");
         MongoCollection<Document> coll = database.getCollection("things");
         AggregateIterable<Document> output = coll.aggregate(Arrays.asList(
                 new Document("$unwind", "$user"),
@@ -65,7 +65,7 @@ public class MainDb {
     }
 
     public static void mentionsUser() {
-        MongoDatabase database = mongoClient.getDatabase("test");
+        MongoDatabase database = mongoClient.getDatabase("tweets");
         MongoCollection<Document> coll = database.getCollection("things");
         AggregateIterable<Document> output = coll.aggregate(Arrays.asList(
                 new Document(" $match", "{ text: /@\\w*/ }"),
