@@ -30,16 +30,12 @@ Which Twitter users link the most to other Twitter users? (Provide the top ten.)
 
 TBD
 
-Who isare the most mentioned Twitter users? (Provide the top five.)
 
-TBD
 Who are the most active Twitter users (top ten)?
 
 TBD
 
-Who are the five most grumpy (most negative tweets) and the most happy (most positive tweets)?
-
-TBD
+Only assignment 1,2 and 4 was made, the rest are not made.
 
 Note: if you are using Vagrant and you cannot connect to the docker container from your computer in (robo 3t,) put this in the Vagrantfile:
 
