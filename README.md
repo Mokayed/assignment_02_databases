@@ -28,12 +28,30 @@ How many Twitter users are in the database?
 
 Which Twitter users link the most to other Twitter users? (Provide the top ten.)
 
-TBD
+Username: lost_dog Links: 549
+Username: tweetpet Links: 310
+Username: VioletsCRUK Links: 251
+Username: what_bugs_u Links: 246
+Username: tsarnick Links: 245
+Username: SallytheShizzle Links: 229
+Username: mcraddictal Links: 217
+Username: Karen230683 Links: 216
+Username: keza34 Links: 211
+Username: DarkPiano Links: 202
 
 
 Who are the most active Twitter users (top ten)?
 
-TBD
+Username: lost_dog Tweets: 549
+Username: webwoke Tweets: 345
+Username: tweetpet Tweets: 310
+Username: SallytheShizzle Tweets: 281
+Username: VioletsCRUK Tweets: 279
+Username: mcraddictal Tweets: 276
+Username: tsarnick Tweets: 248
+Username: what_bugs_u Tweets: 246
+Username: Karen230683 Tweets: 238
+Username: DarkPiano Tweets: 236
 
 Only assignment 1,2 and 4 was made, the rest are not made.
 
